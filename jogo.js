@@ -6,7 +6,7 @@ ctx.height=225;
 const intervalo=10;
 let tempo =0;
 let maxtempo = 10000;
-
+ 
 function Personagem(imagem, x, y, h, w) {
     this.x=x;
     this.y=y;
@@ -16,7 +16,7 @@ function Personagem(imagem, x, y, h, w) {
     this.width = w;
     this.height = h;
     
-    /*
+    /* 
      * Calcula como desenhar o n-esimo frame de um sprite
      */
     this.desenha = function(n) { 
