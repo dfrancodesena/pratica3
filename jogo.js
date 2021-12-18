@@ -91,7 +91,7 @@ var heroi =  new function(){
      console.log(that.agente.x + " " + fundo.sx);
     }
     this.estados[2].complemento=  function() {
-        that.agente.x += 5;
+        that.agente.x =Math.min(961, that.agente.x+5)
         console.log(that.agente.x + " " + fundo.sx);
     }
     
