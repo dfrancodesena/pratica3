@@ -90,7 +90,7 @@ var heroi =  new function(){
         that.agente.x= Math.max(0, that.agente.x-5);
     }
     this.estados[2].complemento=  function() {
-        that.agente.x= Math.min(0, that.agente.x-5);
+        that.agente.x= Math.min(that.agente.x-5, 0);
     }
     
     this.desenha = function(){
