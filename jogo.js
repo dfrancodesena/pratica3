@@ -83,8 +83,8 @@ var heroi =  new function(){
     this.corrente=0;
     this.estados= new Array();
     this.estados[0] = new Estado(4,12,0,0,500, this);  
-    this.estados[1] = new Estado(0,4 ,0,0,200, this);
-    this.estados[2] = new Estado(13,17 ,0,0,200, this);
+    this.estados[1] = new Estado(0,4,0,0,200, this);
+    this.estados[2] = new Estado(13,17,0,0,200, this);
 
     this.estados[1].complemento=  function() {
         that.agente.x= Math.max(0, that.agente.x-5);
