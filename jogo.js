@@ -51,7 +51,7 @@ function Estado(ini,fini, sx, sy, vel, personagem) {
             this.num= this.frameIni;  
         } 
         else { 
-            this.num=  this.num+1;
+            this.num=  this.num+5;
             this.trans();
         }
     }
