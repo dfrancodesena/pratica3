@@ -84,9 +84,13 @@ var heroi =  new function(){
     this.estados= new Array();
     this.estados[0] = new Estado(4,12,0,0,500, this);  
     this.estados[1] = new Estado(0,4 ,0,0,200, this);
+    this.estados[2] = new Estado(0,4 ,0,0,200, this);
 
     this.estados[1].complemento=  function() {
         that.agente.x= Math.max(0, that.agente.x-5);
+    }
+    this.estados[1].complemento=  function() {
+        that.agente.x= Math.min(that.agente.x-5, 0);
     }
     
     this.desenha = function(){
@@ -128,6 +132,8 @@ document.onkeydown = function(e){
         heroi.corrente=0;
     } else if(keycode===ESQ) {
         heroi.corrente=1; 
+    }  else if(keycode===DIR) {
+        heroi.corrente=2; 
     } 
 }
 
