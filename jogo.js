@@ -110,6 +110,8 @@ function desenha(){
 function acertaJanela(){
     if (heroi.agente.x-fundo.sx<0){
         fundo.sx = heroi.agente.x; 
+    }else if( heroi.agente.x - fundo.sx > 400)
+        fundo.sx += 5;
     }
 }
 
